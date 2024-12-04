@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1ED02D17CFF34C48B41C89157908F401 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BFD2CC45866740479FB9676A7395BFB9 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A905CFB633314EA89372FA4D03522D6B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8469A6AD73364C73879E9F954385611A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5118FAE35F084B21A29A1E5C2DA594CF }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A51C3D7ABCC44F8C9F8FC30784728D1F }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
