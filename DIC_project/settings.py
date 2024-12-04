@@ -25,8 +25,10 @@ SECRET_KEY = 'django-insecure-=z5jf7q&%cwwn!zq*y-o02xf!3m7337h!e%tiz!l103-ddxszs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ALLOWED_HOSTS = ["az900-web-fqhsggckbtbjd8hp.centralindia-01.azurewebsites.net",'localhost']
+
 
 # Application definition
 
